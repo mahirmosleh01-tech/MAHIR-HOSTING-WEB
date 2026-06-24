@@ -1,0 +1,11 @@
+{
+  "TELE_like": {
+    "cmd": "python KAWSARxAI.py",
+    "cwd": "",
+    "path": "/storage/emulated/0/.1owncreatedtools/.mg24-personal-vps-hosting/user_files/TELE_like",
+    "auto_restart": false,
+    "restart_interval": "24h",
+    "status": "running",
+    "last_start_time": 1781862435.4011087
+  }
+}
