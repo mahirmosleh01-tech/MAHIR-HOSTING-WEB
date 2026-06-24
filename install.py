@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ╔══════════════════════════════════════════════╗
-# ║       KAWSAR_CODEX - Smart Installer         ║
+# ║       MAHIR_CODEX - Smart Installer         ║
 # ║       VPS Panel - Auto Dependency Fix        ║
 # ╚══════════════════════════════════════════════╝
 
@@ -40,7 +40,7 @@ def pip_install(pkg, fallback=None, skip_on_fail=False):
 
 def main():
     print(f"\n{BOLD}{CYAN}{'='*50}{RESET}")
-    print(f"{BOLD}{CYAN}   KAWSAR_CODEX — VPS Panel Installer{RESET}")
+    print(f"{BOLD}{CYAN}   MAHIR_CODEX — VPS Panel Installer{RESET}")
     print(f"{BOLD}{CYAN}{'='*50}{RESET}\n")
 
     # Step 1: Upgrade pip
@@ -129,9 +129,9 @@ def main():
                 print(f"{GREEN}  ✔ OK: py7zr (no-build-isolation){RESET}")
             else:
                 print(f"{RED}  ✘ py7zr install failed.{RESET}")
-                print(f"{YELLOW}  ℹ app.py তে py7zr import আছে কিন্তু comment করা।{RESET}")
+                print(f"{YELLOW}  ℹ main.py তে py7zr import আছে কিন্তু comment করা।{RESET}")
                 print(f"{YELLOW}  ℹ Termux-এ: pkg install p7zip দিয়ে system-level support নিন।{RESET}")
-                print(f"{YELLOW}  ℹ অথবা app.py-র line 8 এ 'import py7zr' টা comment করে রাখুন।{RESET}")
+                print(f"{YELLOW}  ℹ অথবা main.py-র line 8 এ 'import py7zr' টা comment করে রাখুন।{RESET}")
     print()
 
     # Final check
@@ -139,7 +139,7 @@ def main():
     print(f"{BOLD}{GREEN}  ✅ Installation Complete!{RESET}")
     print(f"{BOLD}{CYAN}{'='*50}{RESET}")
     print(f"\n{CYAN}এখন চালান:{RESET}")
-    print(f"  {BOLD}python app.py{RESET}\n")
+    print(f"  {BOLD}python main.py{RESET}\n")
 
 if __name__ == "__main__":
     main()
